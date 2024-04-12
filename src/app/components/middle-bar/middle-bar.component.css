@@ -1,0 +1,68 @@
+.container{
+  width: 100%;
+  height: 150px;
+  /* display: flex; */
+  /* justify-content:space-evenly; */
+}
+.part_search{
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+.styleInput{
+  width: 250px;
+  height: 30px;
+}
+.icon-search{
+  position: relative;
+  display: flex;
+  gap:10px;
+
+}
+
+.icon_position{
+  position: absolute;
+bottom: 10px;
+left:180px;
+}
+.booktickt{
+  display: flex;
+  /* justify-content: end; */
+  /* align-items: start; */
+  flex-direction: row-reverse;
+  gap: 20px;
+  align-items: center;
+  /* margin-top: -10px; */
+}
+.button_bookTickt{
+  border: none;
+  background-color:#8a74f9 ;
+  height: 35px;
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+.button_bookTickt:hover{
+  transform: scale(1.1);
+}
+.clickable-item
+{
+  cursor: pointer;
+  height:30px;
+  margin-left: 5px;
+}
+.button_icon
+{
+ border: none;
+ background-color: #E9EAEA;
+
+ width: 30px;
+ margin-left: 5px;
+ transition-duration: 0.5s;
+ transition-property: all;
+}
+.button_icon:hover{
+  transform: scale(1.1);
+}

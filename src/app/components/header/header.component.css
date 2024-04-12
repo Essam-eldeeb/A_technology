@@ -1,0 +1,43 @@
+.container-all{
+  height: 100px;
+
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.inline{
+  display: flex;
+  align-items: center;
+}
+.button_right{
+  border: none;
+  width: 40px;
+  height: 30px;
+  margin-left: 10px;
+  background-color: #a39e9e52;
+  border-radius: 30%;
+  transition-duration:0.2s ;
+  transition-property: all;
+  /* font-weight: bold; */
+
+}
+.button_right:hover{
+  transform: scale(1.1);
+}
+.button_edit{
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 20%;
+  transition-duration:0.2s ;
+  transition-property: all;
+
+}
+.button_edit:hover{
+  transform: scale(1.1);
+}
+
+.text-edit{
+  font-weight: bold;
+  margin-right: 5px;
+}

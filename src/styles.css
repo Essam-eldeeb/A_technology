@@ -1,1 +1,85 @@
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Neo Sans Arabic Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Neo Sans Arabic Regular'), url('./assets/fonts/Neo Sans Arabic Regular.woff') format('woff');
+    }
+
+
+
+    @font-face {
+    font-family: 'Neo Sans Arabic Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Neo Sans Arabic Light'), url('./assets/fonts/NeoSansArabicLight.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'Neo Sans Arabic Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Neo Sans Arabic Medium'), url('./assets/fonts/Neo_Sans_Medium.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'Neo Sans Arabic Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Neo Sans Arabic Bold'), url('./assets/fonts/NeoSansArabicBold.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'Neo Sans Arabic Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Neo Sans Arabic Black'), url('./assets/fonts/NeoSansArabicBlack.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'Neo Sans Arabic Ultra';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Neo Sans Arabic Ultra'), url('./assets/fonts/NeoSansArabicUltra.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'Neo Sans Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Neo Sans Medium'), url('./assets/fonts/Neo_Sans_Medium.woff') format('woff');
+    }
+
+
+
+
+
+
+
+
+
+body {
+  font-family: 'Neo Sans Arabic Regular';
+  background-color: #E9EAEA;
+  direction: rtl;
+  margin-left:50px ;
+  margin-right: 50px;
+
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+
+}

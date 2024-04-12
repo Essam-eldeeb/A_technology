@@ -1,0 +1,53 @@
+
+<div class="container_all">
+  <div class="stylechart">
+    <button class="button_chart ">سنويا <i class="fa-solid fa-chevron-down iconStyle"></i></button>
+    <apx-chart
+      [series]="chartOptions.series!"
+      [chart]="chartOptions.chart!"
+      [xaxis]="chartOptions.xaxis!"
+      [yaxis]="chartOptions.yaxis!"
+      [subtitle]="chartOptions.subtitle!"
+      [title]="chartOptions.title!"
+      [stroke]="chartOptions.stroke!"
+      [markers]="chartOptions.markers!"
+      [dataLabels]="chartOptions.dataLabels!"
+    > </apx-chart>
+  </div>
+  <div class="card ">
+
+    <div class="container1">
+      <div class="deletIcon" title="delete"><i class="fa-solid fa-trash-can"></i></div>
+
+      <div class="columnfelx">
+        <div class="header"><h6>عرض التذكرة الخاصه بالفيلم </h6></div>
+        <div class="input"><i class="fa-solid fa-copy  icon_postions" title="COPY" ></i><input type="text" [value]='valueinput' class="form-control"></div>
+        <div class="description"><p>فعال حتى 15 يوليو 2023</p></div>
+      </div>
+
+    </div>
+    <div class="line"></div>
+
+     <div class="container3">
+        <div class="Qrcode">
+          <qrcode [qrdata]="'Your data string'" class="QR" [width]="80"  [errorCorrectionLevel]="'M'"></qrcode>
+
+        </div>
+        <div class="shareAndDiscount">
+          <div class="share">
+            <p class="text-light">خصم</p>
+          </div>
+          <div class="sharebutton text-light ">
+            <button class="button_share "><span class="textButton">مشاركه</span><i class="fa-regular fa-paper-plane"></i></button>
+
+            <div class="number_discount">25%</div>
+
+          </div>
+
+
+        </div>
+     </div>
+  </div>
+
+
+</div>

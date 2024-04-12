@@ -1,0 +1,62 @@
+<div class="parentTable">
+  <p-table
+  class="table bg-light  "
+  [value]="customers"
+  [paginator]="true"
+  [rows]="7"
+  [rowHover]="true"
+
+  [showCurrentPageReport]="true"
+  [tableStyle]="{ 'min-width': '20rem' }"
+
+  currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+  currentPageReportTemplate="  عرض {last} من اصل {totalRecords}   "
+
+>
+  <ng-template class="maintable text-end stylefont" pTemplate="header">
+    <tr class="table1 stylefont " >
+      <td class=" border-right" style="width: 5%">#</td>
+      <td  class="" style="width: 12.5%">المستخدم</td>
+      <td  class="" style="width: 10%">رقم التذكرة</td>
+      <td  class="" style="width: 12%">قيمه التذكرة <button class="buttonFilter"> <p-sortIcon field="code" class="mr-2"></p-sortIcon></button></td>
+      <td  class=" text-end" style="width: 20%">السينمات</td>
+      <td   class="" style="width:10%">عدد الاشخاص</td>
+      <td   class=" stylemargin" style="width: 10%">عدد مرات الشراء</td>
+
+      <td  class="  border-left text-center" style="width: 20%">التذكرة</td>
+
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-customer  class="table3 stylefont">
+    <tr class="table3">
+      <td>{{ customer.id }}</td>
+      <td>
+        <img class="imgstyle" src="../../../assets/تنزيل.jpeg" alt="" />
+
+        {{ customer.user }}
+      </td>
+
+      <td>{{ customer.numberticket }}</td>
+      <td>{{ customer.costTicket }}</td>
+      <td>{{ customer.cinema }}</td>
+      <td>{{ customer.countOfperson }}</td>
+      <td>{{ customer.countOfBuy }}</td>
+
+      <td><button class="gift_icon"><i class="fa-solid fa-gift "></i></button>  {{ customer.tickt }} <button class="bownload_button" mat-button><i class="fa-solid fa-download"></i></button> <div class="text-center smalltext"><small>9-mb PDF</small></div></td>
+    </tr>
+  </ng-template>
+  <!-- <ng-template pTemplate="paginatorleft">
+    <p-button type="button" icon="pi pi-plus" styleClass="p-button-text"></p-button>
+</ng-template> -->
+<ng-template pTemplate="paginatorright">
+    <p-button type="button" icon="pi " styleClass="p-button-text"></p-button>
+</ng-template>
+
+
+</p-table>
+
+
+
+
+
+</div>
